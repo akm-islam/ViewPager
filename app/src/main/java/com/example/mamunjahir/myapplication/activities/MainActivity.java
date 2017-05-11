@@ -4,13 +4,12 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TableLayout;
 
 import com.example.mamunjahir.myapplication.R;
-import com.example.mamunjahir.myapplication.Views.MainActivityViewPager;
+import com.example.mamunjahir.myapplication.Views.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
-ViewPager mainviewpager;
+    ViewPager mainviewpager;
     TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +17,8 @@ ViewPager mainviewpager;
         setContentView(R.layout.activity_main);
         mainviewpager= (ViewPager) findViewById(R.id.activity_main_viewPager);
        tabLayout= (TabLayout) findViewById(R.id.activity_tab_layout);
-        MainActivityViewPager adapter =new MainActivityViewPager(getSupportFragmentManager());
+        ViewPagerAdapter adapter =new ViewPagerAdapter(getSupportFragmentManager());
        mainviewpager.setAdapter(adapter);
 tabLayout.setupWithViewPager(mainviewpager);
-
     }
 }

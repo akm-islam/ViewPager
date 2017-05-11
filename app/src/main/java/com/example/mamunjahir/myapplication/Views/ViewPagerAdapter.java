@@ -8,30 +8,30 @@ import com.example.mamunjahir.myapplication.fragments.About_us;
 import com.example.mamunjahir.myapplication.fragments.Meet_a_bro;
 import com.example.mamunjahir.myapplication.fragments.Rush;
 
-public class MainActivityViewPager extends FragmentStatePagerAdapter {
+public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    public MainActivityViewPager(FragmentManager fm) {
+    public ViewPagerAdapter(FragmentManager fm) {
         super(fm);
 
     }
 
     @Override
     public Fragment getItem(int position) {
-        Fragment returnFragment;
+        Fragment fragment;
         switch (position) {
             case 0:
-                returnFragment = About_us.newInstance();
+                fragment = About_us.newInstance();
                 break;
             case 1:
-                returnFragment = Meet_a_bro.newInstance();
+                fragment = Meet_a_bro.newInstance();
                 break;
             case 2:
-                returnFragment = Rush.newInstace();
+                fragment = Rush.newInstace();
                 break;
             default:
                 return null;
         }
-        return returnFragment;
+        return fragment;
     }
 
 
