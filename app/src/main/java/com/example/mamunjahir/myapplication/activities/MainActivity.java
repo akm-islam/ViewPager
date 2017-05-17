@@ -28,9 +28,11 @@ tabLayout.setupWithViewPager(viewpager);
 For viewPager wee need ViewPagerAdapter.There are two ViewPager Adapter
 1.FragmentPagerAdapter or 2.FragmentStatePagerAdapter.
 => When you implement a PagerAdapter, you must override the following methods at minimum:
-instantiateItem(ViewGroup, int)
-destroyItem(ViewGroup, int, Object)
-getCount()
-isViewFromObject(View, Object)
-
+   1.instantiateItem(ViewGroup, int)
+   2.destroyItem(ViewGroup, int, Object)
+   3.getCount()
+   4.isViewFromObject(View, Object)
+=> Subclasses only need to implement
+   1.getItem(int) and
+   2.getCount()      to have a working adapter.
 */
