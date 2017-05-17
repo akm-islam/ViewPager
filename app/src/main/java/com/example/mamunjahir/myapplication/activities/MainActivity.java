@@ -24,7 +24,7 @@ tabLayout.setupWithViewPager(viewpager);
 }
 
 
-/* We need a tab layout to setupWithViewPager
+/*
 For viewPager wee need ViewPagerAdapter.There are two ViewPager Adapter
 1.FragmentPagerAdapter or 2.FragmentStatePagerAdapter.
 => When you implement a PagerAdapter, you must override the following methods at minimum:
@@ -35,4 +35,7 @@ For viewPager wee need ViewPagerAdapter.There are two ViewPager Adapter
 => Subclasses only need to implement
    1.getItem(int) and
    2.getCount()      to have a working adapter.
+
+We need a tab layout to setupWithViewPager
+
 */
