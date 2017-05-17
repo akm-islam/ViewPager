@@ -42,7 +42,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-CharSequence title;
+           CharSequence title;   //charseq is data type just like integer
         switch (position){
             case 0:
                 title ="About us";
